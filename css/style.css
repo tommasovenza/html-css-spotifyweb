@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main {
+    background-color: orangered;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    float: left;
+    width: calc(100% - 300px);
+}
+
+.aside {
+    background-color: indigo;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    width: 300px;
+    float: left;
+}
+
+.lorem {
+    padding: 30px;
+}
+
+.footer {
+    height: 100px;
+    background-color: blue;
+}
