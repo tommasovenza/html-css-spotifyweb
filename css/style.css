@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(8, 11, 18, .5);
     height: 100px;
     width: calc(100vw - 300px);
     position: fixed;
@@ -42,19 +42,53 @@ body {
 }
 
 .main {
-    background-color: orangered;
+    background-color: #141922;
     height: calc(100vh - 100px);
     overflow: auto;
     float: left;
     width: calc(100% - 300px);
 }
 
+ /* barra laterale sinistra */
 .aside {
-    background-color: indigo;
+    background-color: #000;
     height: calc(100vh - 100px);
     overflow: auto;
     width: 300px;
     float: left;
+}
+
+.aside img {
+    width: 150px;
+}
+
+.aside .logo {
+    padding: 25px 0 0 30px;
+}
+
+.aside .wrapper-index {
+    padding: 25px 0 0 30px;
+}   
+
+.aside ul {
+    list-style-type: none;
+}
+
+.aside ul li {
+    line-height: 30px;
+}
+
+.aside .index img {
+    width: 30px;
+    padding: 0 3px 5px 0;
+    vertical-align: middle;
+}
+
+.aside .index a {
+    color: #878787;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 5px;
 }
 
 .lorem {
@@ -63,5 +97,5 @@ body {
 
 .footer {
     height: 100px;
-    background-color: blue;
+    background-color: #282828;
 }
