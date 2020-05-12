@@ -35,6 +35,12 @@ body {
     margin: 30px 20px 0 0;
 }
 
+.header a:hover {
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+}
+
 .main {
     background-color: orangered;
     height: calc(100vh - 100px);
