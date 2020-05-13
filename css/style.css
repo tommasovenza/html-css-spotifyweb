@@ -7,11 +7,14 @@
 body {
     color: #fff;
     font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
 a {
     text-decoration: none;
+    color: #878787;
 }
 
 h3 {
@@ -29,7 +32,7 @@ h3 {
 .header {
     background-color: rgba(8, 11, 18, .5);
     height: 100px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     position: fixed;
 }
 
@@ -57,7 +60,7 @@ h3 {
     background-color: #000;
     height: calc(100vh - 100px);
     /* overflow: auto; */
-    width: 200px;
+    width: 250px;
     float: left;
     padding: 25px;
     display: flex;
@@ -104,7 +107,11 @@ h3 {
 
 .aside a {
     color: #878787;
-    font-weight: 800;
+    font-weight: 500;
+}
+
+.aside a:hover {
+    color: #fff;
 }
 
 .aside .wrapper-profile {
@@ -143,11 +150,29 @@ h3 {
     height: calc(100vh - 100px);
     overflow: auto;
     float: left;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
 }
-
 
 .footer {
     height: 100px;
     background-color: #282828;
+    padding: 25px 20px;
+}
+
+.footer img {
+    width: 55px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer .artist-image {
+    position: relative;
+}
+
+.footer .wrapper-artist-name {
+    font-size: 11px;
+    margin-left: 63px;
+    position: absolute;
+    top: 35px;
+    left: 6px;
 }
