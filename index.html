@@ -5,80 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- inter google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <title>Spotifyweb</title>
+    <title>Spotify</title>
 </head>
 
 <body>
 
-    <main class="clearfix">
-        
+    <div class="app-wrapper">
 
-        <div class="aside">
-            <div class="logo">
-                <img src="img/logo.svg" alt="logo">
-            </div>
-            <div>
-                <ul class="index">
-                    <li><img src="img/home.svg" alt="home"><a href="#">Home</a></li>
-                    <li><img src="img/search.svg" alt="#"><a href="#">Cerca</a></li>
-                    <li><img src="img/libreria.svg" alt="libreria"><a href="#">Libreria</a></li>
-                </ul>
-            </div>
+        <!-- inizio main -->
+        <main>
 
-            <div class="fixed-container">
-                <h3>Playlist</h3>
-                <a href="#"><span>+</span>Crea Playlist</a>
-            </div>
+            <!-- inizio main nav -->
+            <div class="main-nav">
+                <div class="nav-elements-container">
+                    <div class="nav-element logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
 
-            <div class="wrapper-index">
-                <ul class="index">
-                    <li><a href="#">I tuoi brani preferiti del 2016</a></li>
-                    <li><a href="#">GRUNGE</a></li>
-                    <li><a href="#">Dance 90's (Top 100 +)</a></li>
-                    <li><a href="#">Pezzi Studio Tommi</a></li>
-                    <li><a href="#">Discover Weekly</a></li>
-                    <li><a href="#">I miei brani di Shazam</a></li>
-                    <li><a href="#">Melvins live</a></li>
-                </ul>
+                    <div id="logo-small">
+                        <img src="img/logo-small.svg" alt="logo_piccolo">
+                    </div>
+    
+                    <div class="nav-element">
+                        <ul>
+                            <li><img src="img/home.svg" alt="icona_casa"> <a href="#"> Home </a> </li>
+                            <li><img src="img/search.svg" alt="icona_casa"> <a href="#"> Cerca </a> </li>
+                            <li><img src="img/libreria.svg" alt="icona_casa"> <a href="#"> La tua libreria </a> </li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav-element playlist-container">
+                        <h2>Playlist</h2>
+                        <a class="target" href="#">Crea Playlist</a>
+                        <ul class="playlist">
+                            <li><a href="#">I tuoi brani preferiti del 2016</a></li>
+                            <li><a href="#">GRUNGE</a></li>
+                            <li><a href="#">Dance 90's (Top 100 +)</a></li>
+                            <li><a href="#">Pezzi Studio Tommi</a></li>
+                            <li><a href="#">Discover Weekly</a></li>
+                            <li><a href="#">I miei brani di Shazam</a></li>
+                            <li><a href="#">Melvins live</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav-element">
+                        <p>Lorem ipsum dolor, sit.</p>
+                        <hr>
+                        <h2>Nome utente</h2>
+                    </div>
+                </div>
+                
             </div>
+            <!-- fine main nav -->
 
-            <div class="wrapper-profile border">
-                <img src="img/download.svg" alt="download-icon"> <a href="#">Installa app</a>
+            <!-- inizio main content -->
+            <div class="main-content">
+                <div class="upgrade">
+                    <a href="#">Effettua l'upgrade</a>
+                </div>
             </div>
-        
-            <div class="wrapper-profile bottom">
-                <img src="img/profile.svg" alt="download-icon"> <a href="#">John Doe</a>
-            </div>
+            <!-- fine main content -->
 
-        </div>
+        </main>
+        <!-- fine main -->
 
-        <div class="main">
-            <div class="header clearfix">
-                <a href="#">effettua l'upgrade</a>
-            </div>
-            
-        </div>
-    </main>
+        <!-- inizio footer -->
+        <footer>
 
-    <section class="footer">
-       <div class="wrapper-artist">
-            <div class="artist-image">
-                <img src="img/sinister.jpeg" alt="immagine artista"><a href="#"></a>
-                <a href="#">Sinister</a>
-                <div class="wrapper-artist-name">
-                    <a href="#">Brano</a>
-                    <a href="#">Nome</a>
-                </div> 
-            </div>
-            
-        
-        
-       </div>
-    </section>
+        </footer>
+        <!-- fine footer -->
+    </div>
+
+
 </body>
 
 </html>
