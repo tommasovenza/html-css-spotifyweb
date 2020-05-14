@@ -16,6 +16,10 @@ a {
     font-weight: 600;
 }
 
+p {
+    color: #fff;
+}
+
 h2 {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -148,6 +152,7 @@ footer {
     padding: 20px;
 }
 
+/* navbar da rivedere */
 .main-content .nav-container {
     padding-top: 85px;
     text-align: center;
@@ -158,6 +163,7 @@ footer {
     text-transform: uppercase;
 }
 
+/* main da rivedere per il responsive */
 .main-content h2 {
     color: #fff;
     margin-top: 10px;
@@ -171,6 +177,15 @@ footer {
     flex-wrap: wrap;
 }
 
+.main-content .flex-content.different {
+    justify-content: flex-start;
+}
+
+.main-content .flex-content.radius img {
+    border-radius: 50%;
+}
+
+/* da pensare se cambiare */
 .main-content .flex-content .card {
     flex-basis: calc(100% / 6);
     padding: 10px;
@@ -180,6 +195,13 @@ footer {
     .main-content .flex-content .card {
         flex-basis: calc(100% / 3);
     padding: 10px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .main-content .flex-content .card {
+        flex-basis: calc(100% / 2);
+        padding: 10px;
     }
 }
 
@@ -199,7 +221,6 @@ footer {
 .main-content h4 a {
     color: #fff;
 }
-
 
 /* footer player */
 .footer-container {
