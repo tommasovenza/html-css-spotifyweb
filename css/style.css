@@ -188,25 +188,24 @@ footer {
 /* da pensare se cambiare */
 .main-content .flex-content .card {
     flex-basis: calc(100% / 6);
-    padding: 10px;
+    position: relative;
 }
 
 @media screen and (max-width: 992px) {
-    .main-content .flex-content .card {
+    .main-content .flex-content .card-container {
         flex-basis: calc(100% / 3);
-    padding: 10px;
     }
 }
 
 @media screen and (max-width: 639px) {
-    .main-content .flex-content .card {
+    .main-content .flex-content .card-container {
         flex-basis: calc(100% / 2);
-        padding: 10px;
     }
 }
 
-.main-content .flex-content img {
+.main-content .flex-content .card-container img {
     width: 100%;
+    display: block;
 }
 
 .main-content .card .title {
@@ -221,6 +220,57 @@ footer {
 .main-content h4 a {
     color: #fff;
 }
+
+/* filtro (.overlay) e icona */
+
+.main-content .flex-content .card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.main-content .flex-content .card .fa-play {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;  
+  z-index: 1;
+}
+
+/* hover */
+
+.main-content .flex-content .card:hover .overlay {
+    opacity: 1;
+}
+
+.main-content .flex-content .card:hover .fa-play {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer player */
 .footer-container {
