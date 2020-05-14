@@ -177,48 +177,56 @@ footer {
     flex-wrap: wrap;
 }
 
+/* .main-content .flex-content .item {
+    padding: 10px;
+} */
+
+.main-content .flex-content .card img {
+    width: 250px;
+    display: block;
+}
+
+.main-content .flex-content .card {
+    flex-basis: calc(100% / 6);
+    position: relative;
+}
+
+.main-content .flex-content .item .title {
+    padding: 5px;
+    max-width: 250px;
+}
+
+.main-content .flex-content .item .title h4 a {
+    color: #fff;
+    padding: 3px;
+}
+
 .main-content .flex-content.different {
     justify-content: flex-start;
+}
+
+.main-content .flex-content.different .item {
+    padding: 10px;
+}
+
+.main-content .flex-content.different.radius .overlay {
+    border-radius: 50%;
 }
 
 .main-content .flex-content.radius img {
     border-radius: 50%;
 }
 
-/* da pensare se cambiare */
-.main-content .flex-content .card {
-    flex-basis: calc(100% / 6);
-    position: relative;
-}
-
 @media screen and (max-width: 992px) {
-    .main-content .flex-content .card-container {
+    .main-content .flex-content .card {
         flex-basis: calc(100% / 3);
     }
 }
 
 @media screen and (max-width: 639px) {
-    .main-content .flex-content .card-container {
+    .main-content .flex-content .card {
         flex-basis: calc(100% / 2);
     }
-}
-
-.main-content .flex-content .card-container img {
-    width: 100%;
-    display: block;
-}
-
-.main-content .card .title {
-    padding: 3px;
-}
-
-.main-content .card a {
-    display: block;
-    padding: 3px 0;
-}
-
-.main-content h4 a {
-    color: #fff;
 }
 
 /* filtro (.overlay) e icona */
