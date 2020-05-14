@@ -144,12 +144,13 @@ footer {
 .footer-container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px 0 0 20px;
     position: relative;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    /* padding: 20px 10px; */
 }
 /* autore */
 footer .author img {
@@ -165,7 +166,7 @@ footer .author li {
 footer .song {
     display: inline-block;
     position: absolute;
-    left: 88px;
+    left: 98px;
     top: 50px;
 }
 
@@ -188,7 +189,6 @@ footer .heart li {
 }
 /* il player */
 .footer-container .wrapper-player-top {
-    /* margin-left: 330px; */
     margin-bottom: 10px;
 }
 
@@ -238,7 +238,6 @@ footer .heart li {
     position: absolute;
     top: 50px;
     left: -50px;
-    margin-bottom: 40px;
 }
 
 .footer-container .wrapper-player-bottom::after {
@@ -298,7 +297,6 @@ footer .heart li {
 }
 
 .footer-container .audio {
-    margin-left: 40%;
     float: left;
 }
 
@@ -333,17 +331,6 @@ footer .heart li {
 
 /* media queries */
 @media screen and (max-width: 1300px) {
-    /* footer {
-        height: 70px;
-    }
-
-    main {
-        height: calc(100% - 70px);
-    } */
-
-    body {
-        font-size: 12px;
-    }
 
     .main-nav .nav-element.logo {
         padding-top: 10px;
