@@ -135,10 +135,6 @@ footer {
     padding: 20px;
 }
 
-
-
-/* player bottom */
-
 .footer-container {
     width: 100%;
     margin: 0 auto;
@@ -146,7 +142,7 @@ footer {
     position: relative;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -177,16 +173,16 @@ footer li a span {
 
 footer .heart {
     font-size: 20px;
-    margin-left: 50px;
+    margin-right: 10%;
 }
 
 footer .heart li {
-    font-size: 20px;
+    /* font-size: 20px; */
     margin-left: 20px;
 }
 
 .footer-container .wrapper-player-top {
-    margin-left: 330px;
+    /* margin-left: 330px; */
     margin-bottom: 10px;
 }
 
@@ -211,13 +207,17 @@ footer .heart li {
 
 .footer-container .wrapper-player-container {
     position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .footer-container .wrapper-player-bottom {
     width: 400px;
     position: absolute;
     top: 50px;
-    left: 45%;
+    left: -50px;
     margin-bottom: 40px;
 }
 
@@ -239,8 +239,35 @@ footer .heart li {
     float: left;
 }
 
-/* player centrale */
+.footer-container .audio {
+    margin-left: 40%;
+}
 
+.footer-container .audio li {
+    margin-right: 50px;
+}
+
+.footer-container .audio-timeline {
+    width: 150px;
+}
+
+.footer-container .audio-timeline::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-container .audio-timeline .seconds {
+    border: 2px solid #fff;
+    width: 20%;
+    float: left;
+}
+
+.footer-container .audio-timeline .remaining-seconds {
+    border: 2px solid #878787;
+    width: 80%;
+    float: left;
+}
 
 
 /* media queries */
