@@ -148,6 +148,40 @@ footer {
     padding: 20px;
 }
 
+.main-content .nav-container {
+    padding-top: 85px;
+    text-align: center;
+}
+
+.main-content .nav-container ul li {
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.main-content h2 {
+    color: #fff;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.main-content .flex-content {
+    display: flex;
+    text-align: center;
+}
+
+.main-content .flex-content img {
+    width: 250px;
+}
+
+.main-content .card a {
+    display: block;
+}
+
+.main-content h4 a {
+    color: #fff;
+}
+
+
 /* footer player */
 .footer-container {
     width: 100%;
