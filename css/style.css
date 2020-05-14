@@ -29,6 +29,14 @@ ul li {
     display: inline-block;
 }
 
+/* clearfix */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* fine clearfix */
+
 /* contenitore app */
 .app-wrapper {
     height: 100vh;
@@ -283,14 +291,6 @@ footer .heart li {
 
 /* fine player */
 
-/* clearfix */
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-/* fine clearfix */
-
 /* inizio sezione audio a destra */
 .footer-container .wrapper-audio {
     width: 500px;
@@ -340,6 +340,10 @@ footer .heart li {
     .main-nav #logo-small img {
         display: block;
         padding-top: 10px;
+    }
+
+    .footer-container .audio {
+        margin-left: 200px;
     }
 
 }
