@@ -227,13 +227,13 @@ footer {
         width: 180px
     }
 
-    .main-nav {
+    /* .main-nav {
         width: 300px;
     }
 
     .main-content {
         width: calc(100% - 300px);
-    }
+    } */
 }
 
 @media screen and (max-width: 992px) {
@@ -492,17 +492,6 @@ footer .heart li {
 
 }
 
-@media screen and (max-width :992px) {
-
-    /* cosa avevo scritto??? */
-    /* .main-nav {
-        width: 80px;
-    }
-
-    .main-content {
-        width: calc(100% - 80px);
-    } */
-}
 
 /* header app */
 .upgrade {
@@ -514,6 +503,7 @@ footer .heart li {
     height: 90px;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
+    z-index: 1;
 }
 
 .upgrade a {
