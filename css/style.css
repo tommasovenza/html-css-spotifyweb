@@ -167,6 +167,7 @@ footer {
 .main-content .flex-content {
     display: flex;
     text-align: center;
+    justify-content: space-between;
 }
 
 .main-content .flex-content img {
