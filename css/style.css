@@ -88,6 +88,11 @@ footer {
     min-height: 50px;
 }
 
+.main-nav .nav-element.download img {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
 .main-nav .nav-element img {
     width: 25px;
     vertical-align: middle;
@@ -174,7 +179,8 @@ footer li a span {
 /* icone cuore */
 footer .heart {
     font-size: 20px;
-    margin-right: 10%;
+    flex-grow: 1;
+    /* margin-right: 10%; */
 }
 
 footer .heart li {
@@ -278,9 +284,22 @@ footer .heart li {
 
 /* fine player */
 
+/* clearfix */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* fine clearfix */
+
+/* inizio sezione audio a destra */
+.footer-container .wrapper-audio {
+    width: 500px;
+}
 
 .footer-container .audio {
     margin-left: 40%;
+    float: left;
 }
 
 .footer-container .audio li {
@@ -288,7 +307,9 @@ footer .heart li {
 }
 
 .footer-container .audio-timeline {
-    width: 150px;
+    width: 70px;
+    float: left;
+    margin-top: 5px;
 }
 
 .footer-container .audio-timeline::after {
