@@ -135,6 +135,7 @@ footer {
     padding: 20px;
 }
 
+/* footer player */
 .footer-container {
     width: 100%;
     margin: 0 auto;
@@ -145,7 +146,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
+/* autore */
 footer .author img {
     width: 55px;
     vertical-align: middle;
@@ -155,7 +156,7 @@ footer .author li {
     margin-left: 10px;
     font-size: 14px;
 }
-
+/* brano e nome */
 footer .song {
     display: inline-block;
     position: absolute;
@@ -170,17 +171,16 @@ footer .song a {
 footer li a span {
     color: #fff;
 }
-
+/* icone cuore */
 footer .heart {
     font-size: 20px;
     margin-right: 10%;
 }
 
 footer .heart li {
-    /* font-size: 20px; */
     margin-left: 20px;
 }
-
+/* il player */
 .footer-container .wrapper-player-top {
     /* margin-left: 330px; */
     margin-bottom: 10px;
@@ -190,7 +190,7 @@ footer .heart li {
     margin-left: 50px;
     font-size: 18px;
 }
-
+/* seconda e quarta icona */
 .footer-container .wrapper-player-top li:nth-child(even) {
     font-size: 28px;
 }
@@ -198,7 +198,7 @@ footer .heart li {
 .footer-container .wrapper-player-top li:first-child {
     margin: 0;
 }
-
+/* fine seconda e quarta icona */
 .footer-container .fa-play {
     border: 1px solid #878787;
     padding: 10px;
@@ -206,13 +206,27 @@ footer .heart li {
 }
 
 .footer-container .wrapper-player-container {
-    position: relative;
+    /* position: relative; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/* elementi span ai lati */
+
+.footer-container .wrapper-player-container .span.left {
+    position: absolute;
+    left: -100px;
+    top: 45px;
+}
+.footer-container .wrapper-player-container .span.right {
+    position: absolute;
+    right: -100px;
+    top: 45px;
+}
+
+/* player bottom */
 .footer-container .wrapper-player-bottom {
     width: 400px;
     position: absolute;
@@ -231,6 +245,28 @@ footer .heart li {
     border: 2px solid #fff;
     width: 40%;
     float: left;
+    position: relative;
+}
+
+.footer-container .wrapper-player-bottom .time .pallino {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    right: -9px;
+    top: -7px;
+    display: none;
+}
+
+.footer-container .wrapper-player-bottom .time:hover {
+    border-color: #1db954;
+}
+
+.footer-container .wrapper-player-bottom .time:hover .pallino {
+    display: block;
 }
 
 .footer-container .wrapper-player-bottom .remaining-time {
@@ -238,6 +274,10 @@ footer .heart li {
     width: 60%;
     float: left;
 }
+
+
+/* fine player */
+
 
 .footer-container .audio {
     margin-left: 40%;
