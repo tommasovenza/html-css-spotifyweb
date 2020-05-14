@@ -168,14 +168,32 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-content .flex-content .card {
+    flex-basis: calc(100% / 6);
+    padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .main-content .flex-content .card {
+        flex-basis: calc(100% / 3);
+    padding: 10px;
+    }
 }
 
 .main-content .flex-content img {
-    width: 250px;
+    width: 100%;
+}
+
+.main-content .card .title {
+    padding: 3px;
 }
 
 .main-content .card a {
     display: block;
+    padding: 3px 0;
 }
 
 .main-content h4 a {
@@ -385,13 +403,14 @@ footer .heart li {
 
 @media screen and (max-width :992px) {
 
-    .main-nav {
+    /* cosa avevo scritto??? */
+    /* .main-nav {
         width: 80px;
     }
 
     .main-content {
         width: calc(100% - 80px);
-    }
+    } */
 }
 
 /* header app */
