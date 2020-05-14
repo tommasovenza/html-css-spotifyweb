@@ -21,6 +21,14 @@ h2 {
     margin-bottom: 10px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
 /* contenitore app */
 .app-wrapper {
     height: 100vh;
@@ -127,15 +135,123 @@ footer {
     padding: 20px;
 }
 
+
+
+/* player bottom */
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .author img {
+    width: 55px;
+    vertical-align: middle;
+}
+
+footer .author li {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+footer .song {
+    display: inline-block;
+    position: absolute;
+    left: 88px;
+    top: 50px;
+}
+
+footer .song a {
+    font-size: 10px;
+}
+
+footer li a span {
+    color: #fff;
+}
+
+footer .heart {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+footer .heart li {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer-container .wrapper-player-top {
+    margin-left: 330px;
+    margin-bottom: 10px;
+}
+
+.footer-container .wrapper-player-top li {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.footer-container .wrapper-player-top li:nth-child(even) {
+    font-size: 28px;
+}
+
+.footer-container .wrapper-player-top li:first-child {
+    margin: 0;
+}
+
+.footer-container .fa-play {
+    border: 1px solid #878787;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-container .wrapper-player-container {
+    position: relative;
+}
+
+.footer-container .wrapper-player-bottom {
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 45%;
+    margin-bottom: 40px;
+}
+
+.footer-container .wrapper-player-bottom::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-container .wrapper-player-bottom .time {
+    border: 2px solid #fff;
+    width: 40%;
+    float: left;
+}
+
+.footer-container .wrapper-player-bottom .remaining-time {
+    border: 2px solid #878787;
+    width: 60%;
+    float: left;
+}
+
+/* player centrale */
+
+
+
 /* media queries */
 @media screen and (max-width: 1300px) {
-    footer {
+    /* footer {
         height: 70px;
     }
 
     main {
         height: calc(100% - 70px);
-    }
+    } */
 
     body {
         font-size: 12px;
