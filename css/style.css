@@ -156,7 +156,6 @@ footer {
     padding: 20px;
 }
 
-/* navbar da rivedere */
 .main-content .nav-container {
     padding-top: 85px;
     text-align: center;
@@ -167,7 +166,7 @@ footer {
     text-transform: uppercase;
 }
 
-/* main da rivedere per il responsive */
+
 .main-content h2 {
     color: #fff;
     margin-top: 10px;
@@ -177,16 +176,16 @@ footer {
 .main-content .flex-content {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-/* .main-content .flex-content .item {
+.main-content .flex-content .item {
     padding: 10px;
-} */
+}
 
 .main-content .flex-content .card img {
-    width: 250px;
+    width: 100%;
     display: block;
 }
 
@@ -196,7 +195,7 @@ footer {
 }
 
 .main-content .flex-content .item .title {
-    padding: 5px;
+    padding: 10px;
     max-width: 250px;
 }
 
@@ -226,14 +225,14 @@ footer {
     .main-content .flex-content .card img {
         width: 180px
     }
-
-    /* .main-nav {
+    /* su macbook si allarga la navbar per dare più spazio agli elementi */
+    .main-nav {
         width: 300px;
     }
 
     .main-content {
         width: calc(100% - 300px);
-    } */
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -251,6 +250,32 @@ footer {
     .main-content .flex-content .card {
         flex-basis: calc(100% / 2);
     }
+}
+
+@media screen and (max-width: 552px) {
+    .main-nav a {
+        display: none;
+    }
+
+    .main-nav h2 {
+        display: none;
+    }
+
+    .main-nav {
+        width: 70px
+    }
+
+    .main-content {
+        width: calc(100% - 70px);
+    }
+
+    .main-content .upgrade {
+        width: calc(100% - 70px);
+    }
+
+    /* .main-nav hr {
+        display: none;
+    } */
 }
 
 /* filtro (.overlay) e icona */
@@ -490,6 +515,18 @@ footer .heart li {
         margin-left: 200px;
     }
 
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper-player-container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper-player-container {
+        width: 250px;
+    }
 }
 
 
