@@ -180,6 +180,9 @@ footer {
     text-transform: uppercase;
 }
 
+.main-content .nav-container ul li a:hover {
+    color: #fff;
+}
 
 .main-content h2 {
     color: #fff;
@@ -446,6 +449,14 @@ footer .heart li {
     left: -50px;
 }
 
+/* animazione hover footer */
+.footer-container .wrapper-player-container .wrapper-player-top .fa-play:hover {
+    transform: scale(1.2);
+}
+.footer-container .wrapper-player-container .wrapper-player-top .fa-play:active {
+    transform: scale(.5);
+}
+
 .footer-container .wrapper-player-bottom::after {
     content: '';
     display: table;
@@ -586,4 +597,14 @@ footer .heart li {
     color: #fff;
 }
 
+.upgrade a:hover {
+    background-color: #1db954;
+    color: #fff;
+    border: #1db954;
+    transform: scale(1.2);
+}
 
+.upgrade a:active {
+    transform: scale(.5);
+}
+    
