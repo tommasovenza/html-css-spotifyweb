@@ -195,8 +195,8 @@ footer {
 }
 
 .main-content .flex-content .item .title {
-    padding: 10px;
-    max-width: 250px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .main-content .flex-content .item .title h4 a {
