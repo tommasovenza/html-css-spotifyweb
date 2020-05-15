@@ -536,6 +536,10 @@ footer .heart li {
     width: 80%;
     float: left;
 }
+/* hover degli a */
+.footer-container a:hover {
+    color: #fff;
+}
 
 
 /* media queries */
