@@ -357,7 +357,7 @@ footer {
     position: relative;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* padding: 20px 10px; */
 }
@@ -388,31 +388,27 @@ footer li a span {
 }
 /* icone cuore */
 footer .heart {
-    font-size: 20px;
+    font-size: 16px;
     flex-grow: 1;
-    /* margin-right: 10%; */
 }
 
 footer .heart li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 /* il player */
-.footer-container .wrapper-player-top {
-    margin-bottom: 10px;
-}
 
 .footer-container .wrapper-player-top li {
-    margin-left: 50px;
-    font-size: 18px;
+    margin-left: 10px;
+    font-size: 14px;
 }
 /* seconda e quarta icona */
 .footer-container .wrapper-player-top li:nth-child(even) {
-    font-size: 28px;
+    font-size: 20px;
 }
 
-.footer-container .wrapper-player-top li:first-child {
+/* .footer-container .wrapper-player-top li:first-child {
     margin: 0;
-}
+} */
 /* fine seconda e quarta icona */
 .footer-container .fa-play {
     border: 1px solid #878787;
@@ -432,21 +428,21 @@ footer .heart li {
 
 .footer-container .wrapper-player-container .span.left {
     position: absolute;
-    left: -100px;
-    top: 45px;
+    left: -40px;
+    top: 35px;
 }
 .footer-container .wrapper-player-container .span.right {
     position: absolute;
-    right: -100px;
-    top: 45px;
+    right: -40px;
+    top: 35px;
 }
 
 /* player bottom */
 .footer-container .wrapper-player-bottom {
-    width: 400px;
+    width: 100px;
     position: absolute;
-    top: 50px;
-    left: -50px;
+    padding: 5px;
+    width: 150px;
 }
 
 /* animazione hover footer */
@@ -502,7 +498,7 @@ footer .heart li {
 
 /* inizio sezione audio a destra */
 .footer-container .wrapper-audio {
-    width: 500px;
+    width: 150px;
 }
 
 .footer-container .audio {
@@ -510,7 +506,7 @@ footer .heart li {
 }
 
 .footer-container .audio li {
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .footer-container .audio-timeline {
@@ -555,23 +551,23 @@ footer .heart li {
         padding-top: 10px;
     }
 
-    .footer-container .audio {
+    /* .footer-container .audio {
         margin-left: 200px;
-    }
+    } */
 
 }
 
 @media screen and (max-width: 992px) {
-    .wrapper-player-container {
+    /* .wrapper-player-container {
         width: 400px;
-    }
+    } */
 
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper-player-container {
+    /* .wrapper-player-container {
         width: 250px;
-    }
+    } */
 }
 
 
