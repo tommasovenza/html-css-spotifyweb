@@ -1,0 +1,1 @@
+document.getElementById('h2').innerHTML='io sono un testo javascript!'; 
